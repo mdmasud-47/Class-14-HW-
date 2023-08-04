@@ -1,0 +1,345 @@
+/* Common Css Start */
+:root {
+    --primary-font: "Poppins", sans-serif;
+    --heading-font: "PT Sans", sans-serif;
+    --slow: 0.8s;
+    --normal: 0.6s;
+    --fast: 0.4s;
+    --text-dark: #353535;
+    --text-light: #7a7a7a;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --highlight-color: #ffcc00;
+    --primary-gradient: #ffcc00;
+    --secondary-gradient: #ffe476;
+    --section-bg-color: #fff7d5;
+    --footer-bg: #575757;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+}
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+a,
+button {
+    font-weight: 500;
+}
+.img_responsive{
+    max-width: 100%;
+    display: block;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text_align{
+    text-align: center;
+}
+.justify_content{
+    justify-content: space-between;
+}
+.btn {
+    padding: 17px 0;
+    color: var(--text-dark);
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+    border: none;
+    border: 1px solid var(--dark-color);
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: var(--normal);
+}
+.btn i{
+  padding-left: 11px;
+}
+.btn-lg{
+  width: 209px;
+}
+.btn-sm{
+  width: 171px;
+}
+.btn:hover{
+  background: var(--highlight-color);
+  color: var(--light-color);
+  font-weight: 600;
+  border-color: var(--highlight-color);
+}
+/* Common Css End */
+/* Manu css start*/
+#manu_bar{
+    padding: 25px 0;
+    top: 0;
+}
+#manu_bar .row{
+    justify-content: space-between;
+    align-items: center;
+ }
+#manu_bar ul li a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--dark-text-color);
+    padding: 20px 20px;
+    display: inline-block;
+    transition: var(--fast);
+    position: relative;
+}
+#manu_bar ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color:var(--text-dark);
+    transition: var(--normal);
+}
+#manu_bar ul li a:hover::after{
+    width: 100%;
+} 
+#manu_bar ul li a.active::after{
+    width: 100%;
+}
+/* Manu css ended*/
+/*about css start*/
+#about{
+    background: linear-gradient(130deg, #FC0 0%, #FAFFCB 100%, #FAFFCB 100%);
+}
+#about .about_img,
+.about_info{
+    width: 50%;
+}
+#about .about_info{
+    position: relative;
+}
+#about .about_info h2{
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 78px;
+}
+#about .about_info p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
+    padding-top: 26px;
+    padding-bottom: 40px;
+}
+#about .about_info .btn{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 17px 35px;
+}
+#about .about_info img{
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+}
+/*about css ended*/
+/* quality css start*/
+#quality{
+    padding: 150px 0;
+}
+#quality .quality_box{
+    width: calc((100% - 30px) / 3);
+}
+#quality .quality_box{
+    border-radius: 20px;
+    background: var(--light-color);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+#quality .quality_box img{
+    padding-left: 136px;
+    margin-top: 39px;
+}
+#quality .quality_box h4{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 180%;
+    padding: 18px 14px 0 0 ;
+}
+#quality .quality_box p{
+    color: #7A7A7A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 190%;
+    padding-bottom: 30px;
+}
+/*quality css ended*/
+/*branding css start*/
+#branding{
+    height: 443px;
+    background:linear-gradient(130deg, #FC0 0%, #FAFFCB 100%, #FAFFCB 100%); ;
+    border-radius: 30px;
+}
+#branding .branding_img,
+.branding_info{
+    width: calc((100% - 180px) / 2);
+}
+#branding .branding_img img{
+    padding-top: 33px;
+}
+#branding .branding_info h2{
+    font-size: 44px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+#branding .branding_info p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 190%;
+    padding-top: 21px;
+    padding-bottom: 30px;
+}
+#branding .branding_info a{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 180%;
+    padding: 17px 35px;
+}
+#branding .branding_info{
+    position: relative;
+}
+#branding .branding_info img{
+    position: absolute;
+    right: 0;
+    top: -33px;
+}
+/*branding css ended*/
+/*help css start*/
+#help{
+    padding: 147px 0;
+}
+#help .help_section,
+.help_info{
+    width: calc((100% - 196px) / 2);
+}
+#help .help_section .help_box{
+    width: 380px;
+    height: 93px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 24px;
+}
+#help .help_box .help_box_icon{
+    width: 95px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#help .help_box .help_box_info{
+    width: calc(100% - 95px);
+    padding-left: 20px;
+    margin-top: 20px;
+}
+#help .help_box .help_box_icon img{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+#help .help_box .help_box_icon{
+    background-color: #55852F;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 58px;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#help .help_box .help_box_icon-2{
+    background-color: #FEDC2A;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 58px;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#help .help_box .help_box_icon-3{
+    background-color: #FF8D3A;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 58px;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#help .help_box .help_box_info h4{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 180%;
+}
+#help .help_box .help_box_info p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 180%;
+}
+#help .help_info h2{
+    text-align: right;
+    font-family: PT Sans;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 26px;
+}
+#help .help_info p{
+    text-align: right;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
+}
+#help .help_info .row div h3{
+    font-family: PT Sans;
+    font-size: 40px;
+    font-weight: 700;
+}
+#help .help_info .row div p{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+}
+#help .help_info .row div{
+    padding-left: 80px;
+    padding-top: 24px;
+    text-align: right;
+}
+/*help css ended*/
